@@ -8,7 +8,7 @@ file2_df = pd.read_excel("Product Spec Roaming.xlsx")
 required_columns_file2 = ["Keywords", "Shortcode", "Unreg", "Keyword Alias1", "Keyword Alias2", "Commercial Name", "SIM Action", "SIM Validity", "Package Validity", "Renewal", "PricePre"]
 for col in required_columns_file2:
     if col not in file2_df.columns:
-        raise KeyError(f"Missing required column '{col}' in Product Spec Roaming.xlsx")
+        raise KeyError(f"Missing is required column '{col}' in Product Spec Roaming.xlsx")
 
 for index, row in file2_df.iterrows():
     keyword = row["Keywords"]
